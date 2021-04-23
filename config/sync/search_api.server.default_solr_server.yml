@@ -1,0 +1,48 @@
+uuid: 6c353db2-28fe-4c65-a381-06a0f647c035
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+_core:
+  default_config_hash: 9MN6yNcs38jLcfUjOVopbyS1QFZom0jIhycismXPxmU
+id: default_solr_server
+name: 'Solr Server'
+description: 'Default Solr server created by the Solr Search Defaults module'
+backend: search_api_solr
+backend_config:
+  connector: standard
+  connector_config:
+    scheme: http
+    host: solr
+    port: 8983
+    path: /
+    core: collection1
+    timeout: 5
+    index_timeout: 10
+    optimize_timeout: 15
+    finalize_timeout: 30
+    commit_within: 10
+    solr_version: ''
+    http_method: AUTO
+    skip_schema_check: false
+    jmx: false
+    solr_install_dir: ''
+  disabled_field_types: {  }
+  disabled_caches: {  }
+  disabled_request_handlers:
+    - request_handler_elevate_default_7_0_0
+    - request_handler_replicationmaster_default_7_0_0
+    - request_handler_replicationslave_default_7_0_0
+  disabled_request_dispatchers:
+    - request_dispatcher_httpcaching_default_7_0_0
+  rows: 10
+  index_single_documents_fallback_count: 10
+  retrieve_data: false
+  highlight_data: false
+  fallback_multiple: true
+  server_prefix: ''
+  domain: generic
+  environment: default
+  optimize: false
+  site_hash: true

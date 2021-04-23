@@ -1,0 +1,42 @@
+uuid: 952c859a-4ba7-4e5f-99f2-6c36154ac04c
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.who_s_online
+  module:
+    - panels
+    - views
+id: homepage-panels_variant-1
+label: Default
+variant: panels_variant
+variant_settings:
+  blocks:
+    54ce873c-2ddf-4c16-b17d-b09d0be24132:
+      id: 'views_block:who_s_online-who_s_online_block'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: content
+      weight: 0
+      uuid: 54ce873c-2ddf-4c16-b17d-b09d0be24132
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 83dd6ea6-1860-42ba-a671-c599fd4e1178
+  label: null
+  weight: 0
+  layout: layout_onecol
+  layout_settings:
+    label: ''
+  page_title: Default
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-1
+  builder: standard
+page: homepage
+weight: -9
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

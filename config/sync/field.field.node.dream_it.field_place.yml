@@ -1,0 +1,19 @@
+uuid: 171428a1-81b1-4007-a121-94de038b09b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place
+    - node.type.dream_it
+id: node.dream_it.field_place
+field_name: field_place
+entity_type: node
+bundle: dream_it
+label: Place
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

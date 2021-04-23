@@ -1,0 +1,96 @@
+uuid: 121d34d5-6160-4a56-97c9-ea869725845e
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.comments_recent
+    - views.view.content_recent
+  content:
+    - 'block_content:basic:7df0a281-4c4a-41d0-8194-beb878abfffc'
+  module:
+    - block_content
+    - panels
+    - user
+    - views
+id: homepage-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    16e81b6c-e01d-4a1a-b9a5-a232b3786e50:
+      id: 'views_block:comments_recent-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: left
+      weight: 1
+      uuid: 16e81b6c-e01d-4a1a-b9a5-a232b3786e50
+      context_mapping: {  }
+    0b7faf31-9ba7-4db8-8021-41e9e3c6db53:
+      id: 'views_block:content_recent-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 1
+      uuid: 0b7faf31-9ba7-4db8-8021-41e9e3c6db53
+      context_mapping: {  }
+    eeafa298-a37d-4431-a68c-4de1df51c1ea:
+      id: 'block_content:7df0a281-4c4a-41d0-8194-beb878abfffc'
+      label: 'Test Block'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: right
+      weight: 1
+      context_mapping: {  }
+      uuid: eeafa298-a37d-4431-a68c-4de1df51c1ea
+  id: panels_variant
+  uuid: 6cd3b47c-2738-4028-86c7-94ad92943a1f
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: ipe
+page: homepage
+weight: -10
+selection_criteria:
+  -
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+selection_logic: and
+static_context: {  }

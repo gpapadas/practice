@@ -1,0 +1,12 @@
+uuid: cfb31e04-d1c0-4e47-bced-d9a9cb9dbe28
+langcode: en
+status: true
+dependencies: {  }
+id: rest
+label: REST
+weight: 3
+is_admin: null
+permissions:
+  - 'create article content'
+  - 'create dream_it content'
+  - 'create page content'
