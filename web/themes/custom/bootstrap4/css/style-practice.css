@@ -1,0 +1,9 @@
+.facets-widget-links > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.facets-widget-checkbox > ul {
+  list-style: none;
+  padding-left: 0;
+}
