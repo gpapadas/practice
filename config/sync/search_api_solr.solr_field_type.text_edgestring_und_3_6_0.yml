@@ -1,17 +1,17 @@
-uuid: b71f0014-2db8-47e5-bc27-d6368afab0e1
+uuid: c0c6724b-2c46-45a6-86df-c27a479107d3
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: uSBOTyeTCtQQUTiAzoF9BQbK5H6RnvAFSII-DlIUcmQ
-id: text_ngramstring_und_6_0_0
-label: 'NGram String Field'
-minimum_solr_version: 6.0.0
-custom_code: ngramstring
+  default_config_hash: LvpfYUzHvp2cxgB6AXmm3C_LIMG7cbz7sQlmKdm8Yp8
+id: text_edgestring_und_3_6_0
+label: 'Edge NGram String Field'
+minimum_solr_version: 3.6.0
+custom_code: edgestring
 field_type_language_code: und
 domains: {  }
 field_type:
-  name: text_ngramstring
+  name: text_edgenstring
   class: solr.TextField
   positionIncrementGap: 100
   analyzers:
@@ -25,7 +25,7 @@ field_type:
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
         -
-          class: solr.NGramFilterFactory
+          class: solr.EdgeNGramFilterFactory
           minGramSize: 2
           maxGramSize: 25
     -

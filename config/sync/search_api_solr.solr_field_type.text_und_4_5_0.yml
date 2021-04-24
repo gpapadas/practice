@@ -1,12 +1,12 @@
-uuid: 0fe19c3d-fcf9-4a28-93e3-536ba9eadebe
+uuid: 105a2e38-2721-4712-8469-256906613d18
 langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: dpN5nQ9TYAnj96GAoBDjFmac2S7IovDn_VG-py4iflk
-id: text_und_6_0_0
+  default_config_hash: BdAIEjub9XNGhI9z8houV1CRlGotvF8qxuwXulFSQ60
+id: text_und_4_5_0
 label: 'Language Undefined Text Field'
-minimum_solr_version: 6.0.0
+minimum_solr_version: 4.5.0
 custom_code: ''
 field_type_language_code: und
 domains: {  }
@@ -130,9 +130,17 @@ solr_configs:
             -
               name: distanceMeasure
               VALUE: internal
+          float:
             -
               name: accuracy
               VALUE: '0.5'
+            -
+              name: maxQueryFrequency
+              VALUE: '0.01'
+            -
+              name: thresholdTokenFrequency
+              VALUE: '0.01'
+          int:
             -
               name: maxEdits
               VALUE: '2'
@@ -145,46 +153,10 @@ solr_configs:
             -
               name: minQueryLength
               VALUE: '4'
-            -
-              name: maxQueryFrequency
-              VALUE: '0.01'
-            -
-              name: thresholdTokenFrequency
-              VALUE: '.01'
+          bool:
             -
               name: onlyMorePopular
               VALUE: 'true'
-    -
-      name: suggest
-      class: solr.SuggestComponent
-      lst:
-        -
-          name: suggester
-          str:
-            -
-              name: name
-              VALUE: und
-            -
-              name: lookupImpl
-              VALUE: AnalyzingInfixLookupFactory
-            -
-              name: dictionaryImpl
-              VALUE: DocumentDictionaryFactory
-            -
-              name: field
-              VALUE: twm_suggest
-            -
-              name: suggestAnalyzerFieldType
-              VALUE: text_und
-            -
-              name: contextField
-              VALUE: sm_context_tags
-            -
-              name: buildOnCommit
-              VALUE: 'true'
-            -
-              name: buildOnStartup
-              VALUE: 'false'
 text_files:
   stopwords: "\n"
   synonyms: "drupal, durpal\n"
