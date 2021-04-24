@@ -15,3 +15,5 @@ services:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: solr
+    volumes:
+      - ${PROJECT_ROOT}/.docksal/etc/solr/conf:/var/lib/solr/conf:ro
