@@ -1,0 +1,55 @@
+uuid: ec6e35e5-57f1-405f-8a4a-efbc7d5f0375
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.rest_posts
+    - views.view.rest_posts
+  module:
+    - panels
+    - views
+id: rest_posts-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    a483bd56-708a-47e7-b7da-ef1e9be893eb:
+      id: 'views_block:rest_posts-block_1'
+      label: 'Rest Posts (created by ''rest'' user)'
+      provider: views
+      label_display: visible
+      views_label: 'Rest Posts (created by ''rest'' user)'
+      items_per_page: none
+      region: main
+      weight: 0
+      uuid: a483bd56-708a-47e7-b7da-ef1e9be893eb
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 46db4b65-ab46-4188-bd7e-1c4eedcb46f4
+  label: null
+  weight: 0
+  layout: bs_1col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      main:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: 'Rest Posts'
+  storage_type: page_manager
+  storage_id: rest_posts-panels_variant-0
+  builder: ipe
+page: rest_posts
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

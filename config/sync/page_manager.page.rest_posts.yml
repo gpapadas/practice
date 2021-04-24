@@ -1,0 +1,12 @@
+uuid: 4595eceb-40fd-4501-9d15-76783a20a252
+langcode: en
+status: true
+dependencies: {  }
+id: rest_posts
+label: 'Rest Posts'
+description: ''
+use_admin_theme: false
+path: /restposts
+access_logic: and
+access_conditions: {  }
+parameters: {  }
