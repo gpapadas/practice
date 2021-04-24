@@ -12,19 +12,19 @@ headers = {
 }
 
 #Include all fields required by the content type
-payload =  '''{
+body =  '''{
   "_links": {
     "type": {
       "href": "http://practice.docksal/rest/type/node/dream_it"
     }
   },
-  "title":[{"value":"Test Title through API 5"}],
-  "body":[{"value":"This post was created also with Python"}],
-  "field_place":[{"value":"Greece"}]
+  "title":[{"value":"Another awesome Dreamit post"}],
+  "body":[{"value":"This dreamit post was created also with Python POST request!"}],
+  "field_place":[{"value":"USA"}]
 }'''
 
 #Post the new node (a Dream It node) to the endpoint.
-r = requests.post(endpoint, data=payload, headers=headers, auth=('rest','rest'))
+r = requests.post(endpoint, data=body, headers=headers, auth=('rest','rest'))
 
 if r.status_code == 201:
     print ("Success")
