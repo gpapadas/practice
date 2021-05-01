@@ -17,7 +17,7 @@ class FibonacciService {
     if (count($this->fibonacciSequence) == $numberOfNumbers) {
       return $this->fibonacciSequence;
     } else {
-      $this->fibonacciSequence = $this->getPreceding(1) + $this->getPreceding(2);
+      $this->fibonacciSequence[] = $this->getPreceding(1) + $this->getPreceding(2);
       return $this->calcSomeFibos($numberOfNumbers);
     }
   }
