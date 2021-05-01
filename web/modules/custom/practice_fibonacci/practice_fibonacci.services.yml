@@ -1,0 +1,3 @@
+services:
+  practice_fibonacci.calc_fibonacci:
+    class: Drupal\practice_fibonacci\FibonacciService

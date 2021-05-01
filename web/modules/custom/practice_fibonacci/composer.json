@@ -1,0 +1,13 @@
+{
+    "name": "practice_fibonacci",
+    "type": "drupal-module",
+    "description": "Generate fibonacci sequences on the fly.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/practice_fibonacci",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/practice_fibonacci",
+        "source": "http://cgit.drupalcode.org/practice_fibonacci",
+    },
+}
