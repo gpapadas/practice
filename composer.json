@@ -33,7 +33,8 @@
     "drupal/views_rows_wrapper": "^2.0"
   },
   "require-dev": {
-    "drupal/devel": "^4.1"
+    "drupal/devel": "^4.1",
+    "phpunit/phpunit": "^9.5"
   },
   "conflict": {
     "drupal/drupal": "*"

@@ -10,7 +10,7 @@ class FibonacciService {
   protected $fibonacciSequence = [0, 1];
 
   /**
-   * Generates certain ammount of Fibonacci numbers.
+   * Generates certain amount of Fibonacci numbers.
    */
   public function calcSomeFibos($numberOfNumbers) {
 
@@ -26,6 +26,6 @@ class FibonacciService {
    * Getting the preceding number.
    */
   private function getPreceding($preceding = 1) {
-    return $this->fibonacciSequence[count($this->fibonacciSequence - $preceding)];
+    return $this->fibonacciSequence[count($this->fibonacciSequence) - $preceding];
   }
 }
