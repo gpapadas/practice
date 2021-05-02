@@ -1,0 +1,13 @@
+{
+    "name": "phpunit_example",
+    "type": "drupal-module",
+    "description": "A module to see how phpunit works.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/phpunit_example",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/phpunit_example",
+        "source": "http://cgit.drupalcode.org/phpunit_example",
+    },
+}
