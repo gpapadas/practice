@@ -1,0 +1,5 @@
+name: 'Drupal Test'
+type: module
+description: 'A module for a drupal test.'
+core: 8.x
+package: 'Custom'

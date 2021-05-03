@@ -1,0 +1,15 @@
+drupal_test.admin_drupaltest:
+  path: '/admin/drupaltest'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'DrupalTest'
+  requirements:
+    _permission: 'access drupaltest administration pages'
+
+drupal_test.config_permutations:
+  path: '/admin/drupaltest/permutations'
+  defaults:
+    _form: '\Drupal\drupal_test\Form\Permutations'
+    _title: 'Drupal test: permutations config'
+  requirements:
+    _permission: 'access permutations administration pages'

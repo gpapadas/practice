@@ -1,0 +1,13 @@
+drupal_test.admin_drupaltest:
+  title: 'Drupal Test'
+  route_name: 'drupal_test.admin_drupaltest'
+  parent: 'system.admin'
+  description: 'Administer and configure your DrupalTest settings.'
+  weight: 1
+
+drupal_test.config_permutations:
+  title: 'Permutations'
+  route_name: 'drupal_test.config_permutations'
+  parent: 'drupal_test.admin_drupaltest'
+  description: 'Drupal Test: permutations'
+  weight: 1
