@@ -24,6 +24,15 @@ function drupal_test_help($route_name, RouteMatchInterface $route_match) {
 }
 
 /**
+ * Implements hook_element_info_alter().
+ */
+function drupal_test_element_info_alter(array &$types) {
+  if (isset($types['textarea'])) {
+    $types['textarea']['#attached']['library'][] = 'drupal_test/drupal-test';
+  }
+}
+
+/**
  * Implements hook_form_alter().
  */
 function drupal_test_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {

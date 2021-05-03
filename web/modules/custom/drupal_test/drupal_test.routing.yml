@@ -4,7 +4,7 @@ drupal_test.admin_drupaltest:
     _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
     _title: 'DrupalTest'
   requirements:
-    _permission: 'access drupaltest administration pages'
+    _role: 'administrator+authenticated+rest'
 
 drupal_test.config_permutations:
   path: '/admin/drupaltest/permutations'
@@ -12,7 +12,7 @@ drupal_test.config_permutations:
     _form: '\Drupal\drupal_test\Form\Permutations'
     _title: 'Drupal test: permutations config'
   requirements:
-    _permission: 'access permutations administration pages'
+    _role: 'administrator+authenticated+rest'
 
 drupal_test.permutations:
   path: '/drupaltest/permutations'
@@ -20,4 +20,6 @@ drupal_test.permutations:
     _controller: '\Drupal\drupal_test\Controller\PermutationsController::permutationsPage'
     _title: 'Drupal test: permutations'
   requirements:
-    _permission: 'access content'
+    _role: 'administrator+authenticated+rest'
+  options:
+    no_cache: 'TRUE'

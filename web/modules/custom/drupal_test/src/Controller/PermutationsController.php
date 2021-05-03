@@ -10,10 +10,10 @@ use Drupal\Core\Render\Markup;
  */
 class PermutationsController extends ControllerBase {
   /**
-   * Returns a permutations page.
+   * Returns a custom permutations page.
    *
    * @return array
-   *   A simple renderable array.
+   *   A renderable array.
    */
   public function permutationsPage() {
 
@@ -23,14 +23,14 @@ class PermutationsController extends ControllerBase {
     // Gets the permutation keyword from the configs of the module.
     $config = $this->config('drupal_test.config_permutations');
     $permutation_keyword = $config->get('keyword');
-    $perm_key_length = strlen($permutation_keyword);
+    $permutation_key_length = strlen($permutation_keyword);
 
     // Save permutations.
     $permutations = '';
-    $this->permute($permutation_keyword, 0, $perm_key_length - 1, $permutations);
+    $this->permute($permutation_keyword, 0, $permutation_key_length - 1, $permutations);
 
     $markup = '<p>' . 'Hello, ' . $current_user . '</p>';
-    $markup .= '<p>Value provided in the back-office is ' . $permutation_keyword . '</p><br/>';
+    $markup .= '<p>Value provided in the back-office is: ' . $permutation_keyword . '</p><br/>';
     $markup .= 'Here are all permutations:';
 
     $element = [
@@ -47,6 +47,7 @@ class PermutationsController extends ControllerBase {
   }
 
   private function permute($str, $l, $r, &$p) {
+
     if ($l == $r) {
       $p .= $str . "\n";
     } else {
@@ -60,7 +61,6 @@ class PermutationsController extends ControllerBase {
 
   private function swap($a, $i, $j) {
 
-    // $temp;
     $charArray = str_split($a);
     $temp = $charArray[$i] ;
     $charArray[$i] = $charArray[$j];

@@ -35,8 +35,8 @@ class Permutations extends ConfigFormBase {
     $form['keyword'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Keyword'),
-      '#maxlength' => 6,
-      '#default_value' => $config->get('keyword'), // 'HEY', // $config->get('checkbox_' . $record->field),
+      '#maxlength' => $config->get('maxlength'),
+      '#default_value' => $config->get('keyword'),
       '#description' => t('<a href="@permutations" target="_blank">Learn more about permutations</a>', array(
         '@permutations' => 'https://www.geeksforgeeks.org/php-program-for-write-a-program-to-print-all-permutations-of-a-given-string/'
       )),
