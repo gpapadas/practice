@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.search_index
     - field.field.node.page.body
+    - field.field.node.page.field_image
     - node.type.page
   module:
     - text
@@ -24,6 +25,7 @@ content:
     label: hidden
     region: content
 hidden:
+  field_image: true
   langcode: true
   links: true
   search_api_excerpt: true

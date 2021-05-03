@@ -89,7 +89,7 @@ field_settings:
     label: Place
     datasource_id: 'entity:node'
     property_path: field_place
-    type: text
+    type: string
     dependencies:
       config:
         - field.storage.node.field_place
@@ -141,7 +141,7 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
-    type: text
+    type: string
     boost: !!float 8
     dependencies:
       module:

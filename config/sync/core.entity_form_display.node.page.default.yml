@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_image
+    - image.style.thumbnail
     - node.type.page
   module:
+    - image
+    - imce
     - path
     - text
 _core:
@@ -31,6 +35,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    weight: 121
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
+    region: content
   langcode:
     type: language_select
     weight: 2

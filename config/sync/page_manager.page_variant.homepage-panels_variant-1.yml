@@ -5,7 +5,10 @@ dependencies:
   config:
     - page_manager.page.homepage
     - views.view.who_s_online
+  content:
+    - 'block_content:basic:f8930834-211d-4add-ab75-67ca6a99f416'
   module:
+    - block_content
     - panels
     - views
 id: homepage-panels_variant-1
@@ -23,6 +26,18 @@ variant_settings:
       region: content
       weight: 0
       uuid: 54ce873c-2ddf-4c16-b17d-b09d0be24132
+      context_mapping: {  }
+    e1c98ea1-1630-4cf3-bdf2-ee8057a2f6a9:
+      id: 'block_content:f8930834-211d-4add-ab75-67ca6a99f416'
+      label: 'Message for Guests'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: content
+      weight: 0
+      uuid: e1c98ea1-1630-4cf3-bdf2-ee8057a2f6a9
       context_mapping: {  }
   id: panels_variant
   uuid: 83dd6ea6-1860-42ba-a671-c599fd4e1178

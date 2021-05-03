@@ -5,8 +5,12 @@ dependencies:
   config:
     - field.field.node.dream_it.body
     - field.field.node.dream_it.field_place
+    - field.field.node.dream_it.field_super_hero_image
+    - image.style.thumbnail
     - node.type.dream_it
   module:
+    - image
+    - imce
     - path
     - text
 id: node.dream_it.default
@@ -37,6 +41,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_super_hero_image:
+    weight: 123
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: image_image
     region: content
   langcode:
     type: language_select

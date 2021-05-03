@@ -1,0 +1,82 @@
+uuid: da995b7d-c231-46e9-9439-84746a098d5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type
+    - facets.facet.place
+    - page_manager.page.facets
+    - views.view.solr_search_content
+  module:
+    - facets
+    - panels
+    - views
+id: facets-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    33fcf00a-1a36-40de-9d60-28b23a38838a:
+      id: 'facet_block:content_type'
+      label: 'Content type'
+      provider: facets
+      label_display: visible
+      region: left
+      weight: 0
+      uuid: 33fcf00a-1a36-40de-9d60-28b23a38838a
+      context_mapping: {  }
+    4f18a78a-bbb0-460c-9202-9bc244edbc8c:
+      id: 'facet_block:place'
+      label: Place
+      provider: facets
+      label_display: visible
+      region: left
+      weight: 0
+      uuid: 4f18a78a-bbb0-460c-9202-9bc244edbc8c
+      context_mapping: {  }
+    d3f0cd03-de70-4a8e-8344-b66805642bf5:
+      id: 'views_block:solr_search_content-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: right
+      weight: 0
+      uuid: d3f0cd03-de70-4a8e-8344-b66805642bf5
+      context_mapping: {  }
+  id: panels_variant
+  uuid: eeb5ca39-7360-4c96-83a2-4e4c6f0db95f
+  label: null
+  weight: 0
+  layout: bs_2col
+  layout_settings:
+    label: ''
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      left:
+        wrapper: div
+        classes:
+          col-sm-3: col-sm-3
+        add_region_classes: 1
+        attributes: ''
+      right:
+        wrapper: div
+        classes:
+          col-sm-9: col-sm-9
+        add_region_classes: 1
+        attributes: ''
+  page_title: ''
+  storage_type: page_manager
+  storage_id: facets-panels_variant-0
+  builder: standard
+page: facets
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

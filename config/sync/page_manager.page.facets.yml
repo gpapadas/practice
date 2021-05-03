@@ -1,0 +1,12 @@
+uuid: 7df43d8e-4c49-4e1b-90c6-ee05c58676b5
+langcode: en
+status: true
+dependencies: {  }
+id: facets
+label: Facets
+description: ''
+use_admin_theme: false
+path: /facets
+access_logic: and
+access_conditions: {  }
+parameters: {  }

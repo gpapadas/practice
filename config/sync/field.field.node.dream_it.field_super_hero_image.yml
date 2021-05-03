@@ -1,22 +1,20 @@
-uuid: 088a95ed-6993-49c2-ae76-13f3018889ab
+uuid: daf9f3fa-ec5b-40be-83ce-0aaa849abcb4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.article
+    - field.storage.node.field_super_hero_image
+    - node.type.dream_it
   module:
     - image
-_core:
-  default_config_hash: tgJzhA7Swh4M_gWU5FwFe5lPxPj5rebpMbvhpdNrERs
-id: node.article.field_image
-field_name: field_image
+id: node.dream_it.field_super_hero_image
+field_name: field_super_hero_image
 entity_type: node
-bundle: article
-label: Image
+bundle: dream_it
+label: 'Super Hero Image'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
