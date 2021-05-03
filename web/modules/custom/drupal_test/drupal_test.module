@@ -27,7 +27,9 @@ function drupal_test_help($route_name, RouteMatchInterface $route_match) {
  * Implements hook_form_alter().
  */
 function drupal_test_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-
-  // Alter submit button text.
-  $form['actions']['submit']['#value'] = t('Save');
+  
+  if($form_id == 'drupal_test_config_permutations') {
+    // Alter submit button text.
+    $form['actions']['submit']['#value'] = t('Save');
+  }
 }
