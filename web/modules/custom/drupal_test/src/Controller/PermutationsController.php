@@ -31,7 +31,7 @@ class PermutationsController extends ControllerBase {
 
     $markup = '<p>' . 'Hello, ' . $current_user . '</p>';
     $markup .= '<p>Value provided in the back-office is: ' . $permutation_keyword . '</p><br/>';
-    $markup .= 'Here are all permutations:';
+    $markup .= '<p>Here are all permutations:</p>';
 
     $element = [
       '#markup' => Markup::create($markup),
