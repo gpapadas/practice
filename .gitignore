@@ -43,7 +43,7 @@
 /.history
 
 # Ignore other folders
-#/backup
+/backup
 
 # Ignore docksal-local configuration
 /.docksal/docksal-local.env
